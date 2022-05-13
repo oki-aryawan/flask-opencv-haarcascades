@@ -1,23 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
+<style type="text/css">
+    body > .grid {
+      height: 100%;
+    }
+    .image {
+      margin-top: 50px;
+    }
+  </style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask OpenCV</title>
+    <link rel="icon" type="image/x-icon" href="/static/python.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
     <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+</head>
 
-
-  <body>
-    <div class="pusher" style="margin-top: 50px">
-        <div class="ui container">
-            <div class="" style="align-content: center">
-                <h1 class="ui header">Live Streaming</h1>
-                <div class="ui rounded image">
-                    <img src="{{ url_for('video_feed') }}" width="854px" height="480">
-                </div>
-
+<body>
+    <div style="">
+        <div class="ui middle aligned center aligned grid">
+            <div class="ui rounded image">
+                <h1 class="ui center aligned header">
+                Flask x OpenCV
+                </h1>
+                <img src="{{ url_for('video_feed') }}" width="854px" height="480">
             </div>
         </div>
     </div>
-    </body>
-
+</body>
 
 </html>
