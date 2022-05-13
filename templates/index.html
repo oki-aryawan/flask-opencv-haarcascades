@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html>
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+
 
   <body>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8  offset-lg-2">
-                <h3 class="mt-5">Live Streaming</h3>
-                <img src="{{ url_for('video_feed') }}" width="50%">
+    <div class="pusher" style="margin-top: 50px">
+        <div class="ui container">
+            <div class="" style="align-content: center">
+                <h1 class="ui header">Live Streaming</h1>
+                <div class="ui rounded image">
+                    <img src="{{ url_for('video_feed') }}" width="854px" height="480">
+                </div>
+
             </div>
         </div>
     </div>
